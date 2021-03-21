@@ -1,10 +1,11 @@
 import React from 'react'
-
-
+import {} from "react-router-dom"
+import Navbar from "./components/Navbar"
 function App() {
-  return <div>
-    <h1>test</h1>
-  </div>
+  return <Navbar />
+  //Home
+  //Notes
+  //Create Note
 }
 
 export default App;
