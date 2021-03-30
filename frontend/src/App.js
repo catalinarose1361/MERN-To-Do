@@ -11,7 +11,7 @@ function App() {
       // navbar is outside Route because it shows on every page
        <Navbar />
 
-        <Route path="/">
+        <Route path="/" exact>
         <Home />
         </Route>
 
