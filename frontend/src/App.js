@@ -12,15 +12,15 @@ function App() {
        <Navbar />
 
         <Route path="/">
-        //Home
+        <Home />
         </Route>
 
         <Route path="/notes">
-        //Notes
+        <Notes />
         </Route>
 
         <Route path="/create">
-        //Create Note
+        <CreateNote />
         </Route>
        
     </Router>
