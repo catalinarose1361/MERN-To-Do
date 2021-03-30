@@ -19,6 +19,11 @@ function CreateNote() {
         })
     }
 
+    function handleClick(event) {
+        event.preventDefault();
+        console.log(input)
+    }
+
     return <div className="container">
         <h1>Create Note</h1>
         
