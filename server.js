@@ -6,7 +6,7 @@ const mongoose = require("mongoose")
 app.use(cors());
 app.use(express.json())
 
-//connect to mongoose
+mongoose.connect("mongodb+srv://catalina-admin:fliaJUchyWudg52g@cluster0.xttdr.mongodb.net/notesDB")
 
 //require route
 
