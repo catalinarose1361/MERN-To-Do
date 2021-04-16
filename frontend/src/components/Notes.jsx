@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react"
 //fetch data from notes route
 function Notes() {
     const [notes, setNotes] = useState([{
-        title: "",
-        content: ""
+        title: " ",
+        content: " "
     }])
 
     //the useEffect method fetches the data
