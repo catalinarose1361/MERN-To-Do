@@ -3,12 +3,12 @@ const app = express();
 const cors = require("cors")
 const mongoose = require("mongoose")
 const path = require("path")
-const port = process.env.PORT || 3001
+const Port = process.env.PORT || 3001
 
 app.use(cors());
 app.use(express.json())
 
-mongoose.connect(MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
 
 app.use("/", require("./routes/noteRoute"))
 //if the app is in Production mode use the 
@@ -20,6 +20,6 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-app.listen(port, function() {
+app.listen(Port, function() {
     console.log("express server is running")
 })
