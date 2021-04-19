@@ -26,7 +26,7 @@ function CreateNote() {
             content: input.content
         }
         // sending the newNote object to the address below
-        axios.post('/create', newNote)
+        axios.post('http://localhost:3001/create', newNote)
     }
 
     return <div className="container">

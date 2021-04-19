@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001
 app.use(cors());
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://catalina-admin:fliaJUchyWudg52g@cluster0.xttdr.mongodb.net/notesDB")
+mongoose.connect(MONGODB_URI)
 
 app.use("/", require("./routes/noteRoute"))
 //if the app is in Production mode use the 
