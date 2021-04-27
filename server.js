@@ -13,7 +13,7 @@ app.use(cors());
 
 mongoose.connect(process.env.MONGODB_URI)
 
-app.use('/' require('./routes/noteRoute'))
+app.use('/', require('./routes/noteRoute'))
 //if the app is in Production mode use the 
 //static files located in the build folder
 if(process.env.NODE_ENV === 'production') {
@@ -23,6 +23,6 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-app.listen(Port, function() {
+app.listen(port, function() {
     console.log("express server is running")
 })
