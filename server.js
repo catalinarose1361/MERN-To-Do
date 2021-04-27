@@ -3,10 +3,13 @@ const app = express();
 const cors = require("cors")
 const mongoose = require("mongoose")
 const path = require("path")
-const Port = process.env.PORT || 3001
+const port = process.env.PORT || 5000
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); 
+// app.use(bodyParser.json()); --old will give you a depreciation warning
 
 app.use(cors());
-app.use(express.json())
 
 mongoose.connect(process.env.MONGODB_URI)
 
