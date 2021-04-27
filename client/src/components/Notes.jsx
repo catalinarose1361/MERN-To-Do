@@ -8,7 +8,7 @@ function Notes() {
 
     //the useEffect method fetches the data
     useEffect(() => {
-        fetch("/notes").then(res => {
+        fetch("https://notes-app-crw.herokuapp.com/notes").then(res => {
             if(res.ok) {
                 return res.json()
             }
