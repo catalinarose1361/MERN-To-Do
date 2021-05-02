@@ -41,7 +41,7 @@ function CreateNote() {
                 <textarea onChange={handleChange} name="content" value={input.content} className="form-control" autoComplete="off" placeholder="Note Content"></textarea>  
             </div>
             
-            <button onClick={handleClick} clasName="btn btn-lg btn-info">Add Note</button>
+            <button onClick={handleClick} className="btn btn-lg btn-info">Add Note</button>
 
         </form>
 
