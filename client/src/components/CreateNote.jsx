@@ -26,7 +26,7 @@ function CreateNote() {
             content: input.content
         }
         // sending the newNote object to the address below
-        axios.post('https://notes-app-crw.herokuapp.com/create', newNote)
+        axios.post('/create', newNote)
     }
 
     return <div className="container">
